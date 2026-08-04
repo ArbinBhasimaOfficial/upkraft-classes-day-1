@@ -3,9 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Arbin's Todo List</title>
-    <link rel="stylesheet" href="./style.css">
-    <script defer src="./todo.js"></script>
+    <title>Document</title>
+    <script type="module" defer src="./main.js"></script>
     <style>
       ul {
         list-style-type: disc;
@@ -13,12 +12,12 @@
     </style>
   </head>
   <body>
-    <h1>Mine ToDo List</h1>
+    <h1>Your Todos</h1>
     <div>
       <form id="todo-form">
-        <input id="todo-input" pattern=".*\S.*" placeholder="Enter your todo" autocomplete="off" required/>
-        <button class="btn" type="submit">Add todo</button>
-      <button id="clear-btn" class="btn" type="button">Clear Completed</button>
+        <input id="todo-input" placeholder="Enter your todo" />
+        <button type="submit">Add todo</button>
+        <button id="clear-todos" type="button">Clear Todos</button>
       </form>
     </div>
     <ul id="todo-list">
@@ -31,6 +30,6 @@
       <li id="todo-item">
         <p>This is my todo element</p>
       </li> -->
-    </ul>   
+    </ul>
   </body>
 </html>
