@@ -4,4 +4,5 @@ import todoController from "./controller/todoController.js";
 
 document.addEventListener("DOMContentLoaded", () => {
     new todoController(new todoList(), new todoView());
+
 });
